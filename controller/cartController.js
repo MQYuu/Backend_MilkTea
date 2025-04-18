@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const Cart = require('../models/Cart');
+const Cart = require('../models/cart');
 const User = require('../models/user');
 const Product = require('../models/Product');
 const mongoose = require('mongoose');
