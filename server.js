@@ -10,11 +10,12 @@ connectDB();
 
 // Cấu hình CORS trước khi định nghĩa routes
 app.use(cors({
-  origin: 'http://localhost:5173', // Chỉ cho phép frontend
+  origin: ['http://localhost:5173', 'https://frontend-milktea.onrender.com'], // Thêm cả URL của frontend đã deploy
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
+
 
 app.use(express.json()); // Middleware parse JSON
 
